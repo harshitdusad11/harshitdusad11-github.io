@@ -3,230 +3,265 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Harshit Dusad — FP&A Consultant & Chartered Accountant</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Lato:wght@300;400;700&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<title>HM Advisory — Fractional CFO &amp; FP&amp;A Consultant</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
 <style>
 :root {
-  --black: #0d0d0d;
-  --charcoal: #1a1a1a;
-  --mid: #555;
-  --muted: #888;
-  --border: #e5e5e5;
+  --black: #0a0a0a;
+  --ink: #1a1a2e;
+  --mid: #4a5568;
+  --muted: #718096;
+  --border: #e2e8f0;
   --bg: #ffffff;
-  --bg-off: #f8f7f5;
-  --bg-dark: #0d0d0d;
-  --gold: #b8913a;
-  --gold-light: #d4a84b;
+  --bg-off: #f7f8fc;
+  --bg-dark: #0a0a0a;
+  --gold: #c47f17;
+  --gold-light: #e09c30;
+  --green: #10b981;
+  --blue: #3b82f6;
+  --red: #ef4444;
 }
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Lato',sans-serif;background:var(--bg);color:var(--charcoal);overflow-x:hidden}
-.container{max-width:1080px;margin:0 auto;padding:0 2rem}
-.label{font-family:'DM Mono',monospace;font-size:.63rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:.6rem;margin-bottom:1rem}
-.label::before{content:'';width:22px;height:1px;background:var(--gold);display:block}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden;line-height:1.6}
+.container{max-width:1100px;margin:0 auto;padding:0 2rem}
+.label{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:.6rem;margin-bottom:.9rem}
+.label::before{content:'';width:20px;height:1px;background:var(--gold);display:block}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
-.nav-inner{max-width:1080px;margin:0 auto;padding:0 2rem;height:62px;display:flex;align-items:center;justify-content:space-between}
-.nav-logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:500;color:var(--black);text-decoration:none}
-.nav-links{display:flex;align-items:center;gap:2.25rem;list-style:none}
-.nav-links a{font-family:'DM Mono',monospace;font-size:.63rem;letter-spacing:.13em;text-transform:uppercase;color:var(--mid);text-decoration:none;transition:color .2s}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 2rem;height:64px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo-wrap{display:flex;flex-direction:column}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:500;color:var(--black);text-decoration:none;line-height:1.2}
+.nav-logo-sub{font-family:'DM Mono',monospace;font-size:.52rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+.nav-links a{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--black)}
-.nav-cta{font-family:'DM Mono',monospace;font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;background:var(--black);color:#fff;padding:.62rem 1.35rem;border-radius:2px;text-decoration:none;transition:background .2s}
-.nav-cta:hover{background:var(--gold)}
+.nav-cta{font-family:'Inter',sans-serif;font-size:.82rem;font-weight:600;background:var(--gold);color:#fff;padding:.6rem 1.4rem;border-radius:6px;text-decoration:none;transition:all .2s;white-space:nowrap}
+.nav-cta:hover{background:var(--gold-light);transform:translateY(-1px)}
 
 /* HERO */
-.hero{min-height:100vh;padding-top:62px;display:grid;grid-template-columns:1fr 400px;align-items:center;gap:4rem;max-width:1080px;margin:0 auto;padding-inline:2rem}
-.hero-eyebrow{font-family:'DM Mono',monospace;font-size:.63rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem}
-.hero-h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,4.5vw,4rem);font-weight:400;line-height:1.1;color:var(--black);margin-bottom:1.5rem}
+.hero{min-height:100vh;padding-top:64px;display:flex;align-items:center;background:var(--bg)}
+.hero-inner{display:grid;grid-template-columns:1fr 420px;gap:4rem;align-items:center;padding:3rem 0}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:#f0fdf4;border:1px solid #bbf7d0;color:#166534;font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;padding:.4rem .9rem;border-radius:100px;margin-bottom:1.5rem}
+.hero-badge-dot{width:6px;height:6px;border-radius:50%;background:#22c55e;animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.hero-h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4vw,3.6rem);font-weight:500;line-height:1.1;color:var(--black);margin-bottom:1rem}
 .hero-h1 em{font-style:italic;color:var(--gold)}
-.hero-sub{font-size:1.02rem;font-weight:300;line-height:1.82;color:var(--mid);max-width:500px;margin-bottom:2.5rem}
-.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
-.btn{display:inline-block;text-decoration:none;font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;padding:.88rem 1.9rem;border-radius:2px;transition:all .22s}
-.btn-dark{background:var(--black);color:#fff}
-.btn-dark:hover{background:var(--gold)}
-.btn-ghost{border:1.5px solid var(--border);color:var(--mid)}
-.btn-ghost:hover{border-color:var(--black);color:var(--black)}
-.btn-gold{background:var(--gold);color:#fff}
-.btn-gold:hover{background:var(--gold-light)}
-.btn-wo{border:1.5px solid rgba(255,255,255,.22);color:rgba(255,255,255,.7)}
-.btn-wo:hover{border-color:#fff;color:#fff}
+.hero-punchline{font-size:1.1rem;font-weight:500;color:var(--ink);margin-bottom:1rem;line-height:1.5;border-left:3px solid var(--gold);padding-left:1rem}
+.hero-sub{font-size:1rem;font-weight:300;line-height:1.8;color:var(--mid);margin-bottom:2rem}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;font-family:'Inter',sans-serif;font-weight:600;font-size:.88rem;padding:.85rem 1.75rem;border-radius:6px;transition:all .22s;cursor:pointer}
+.btn-primary{background:var(--gold);color:#fff}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(196,127,23,.3)}
+.btn-secondary{background:var(--ink);color:#fff}
+.btn-secondary:hover{background:#2d3748;transform:translateY(-2px)}
+.btn-ghost{border:1.5px solid var(--border);color:var(--mid);background:transparent}
+.btn-ghost:hover{border-color:var(--ink);color:var(--ink)}
+.btn-white{background:#fff;color:var(--ink);border:1.5px solid rgba(255,255,255,.2)}
+.btn-white:hover{background:rgba(255,255,255,.9)}
+.hero-trust{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.hero-trust-label{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.trust-pills{display:flex;gap:.5rem;flex-wrap:wrap}
+.trust-pill{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.06em;background:var(--bg-off);border:1px solid var(--border);color:var(--mid);padding:.3rem .7rem;border-radius:4px}
 
 /* Hero card */
-.hero-card{background:var(--bg-off);border:1px solid var(--border);border-radius:4px;padding:2.4rem}
-.hc-name{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:500;color:var(--black);margin-bottom:.2rem}
-.hc-role{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:1.7rem}
-.hc-rule{height:1px;background:var(--border);margin-bottom:1.7rem}
-.hc-metrics{display:flex;flex-direction:column}
-.hc-metric{display:flex;justify-content:space-between;align-items:baseline;padding:1.1rem 0;border-bottom:1px solid var(--border)}
-.hc-metric:first-child{padding-top:0}
+.hero-card{background:var(--bg-off);border:1px solid var(--border);border-radius:12px;padding:2rem;box-shadow:0 4px 24px rgba(0,0,0,.06)}
+.hc-top{display:flex;align-items:center;gap:.75rem;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+.hc-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-light));display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.1rem;color:#fff;font-weight:600;flex-shrink:0}
+.hc-name{font-weight:700;font-size:.95rem;color:var(--black)}
+.hc-role{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.hc-metrics{display:flex;flex-direction:column;gap:0}
+.hc-metric{display:flex;justify-content:space-between;align-items:center;padding:.9rem 0;border-bottom:1px solid var(--border)}
 .hc-metric:last-child{border-bottom:none;padding-bottom:0}
-.hc-val{font-family:'Playfair Display',serif;font-size:1.65rem;font-weight:400;color:var(--black)}
-.hc-lbl{font-family:'DM Mono',monospace;font-size:.57rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);text-align:right;max-width:130px;line-height:1.5}
-.hc-footer{margin-top:1.6rem;padding-top:1.4rem;border-top:1px solid var(--border);display:flex;align-items:center;gap:.55rem}
-.avail-dot{width:7px;height:7px;border-radius:50%;background:#22c55e;flex-shrink:0;animation:blink 2.2s ease-in-out infinite}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:.35}}
-.avail-txt{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.hc-val{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:500;color:var(--black)}
+.hc-lbl{font-size:.75rem;color:var(--muted);text-align:right;max-width:140px;line-height:1.4}
+.hc-footer{margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid var(--border)}
+.hc-avail{display:flex;align-items:center;gap:.5rem;margin-bottom:.75rem}
+.avail-dot{width:7px;height:7px;border-radius:50%;background:#22c55e;animation:blink 2s ease-in-out infinite}
+.avail-txt{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.07em;text-transform:uppercase;color:var(--mid)}
+.hc-cta{display:block;text-align:center;background:var(--gold);color:#fff;font-weight:600;font-size:.85rem;padding:.75rem;border-radius:6px;text-decoration:none;transition:all .2s}
+.hc-cta:hover{background:var(--gold-light)}
 
 /* PROOF BAR */
-.proof-bar{background:var(--black);padding:1.35rem 0}
-.proof-inner{max-width:1080px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;gap:2rem}
-.proof-tag{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.25);white-space:nowrap;flex-shrink:0}
-.proof-list{display:flex;gap:2rem;flex-wrap:wrap;align-items:center}
-.proof-item{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.06em;color:rgba(255,255,255,.5);white-space:nowrap}
-.proof-dot{color:rgba(255,255,255,.15)}
-
-/* DIVIDER */
-.hr{border:none;border-top:1px solid var(--border);max-width:1080px;margin:0 auto}
+.proof-bar{background:var(--ink);padding:1.25rem 0}
+.proof-inner{max-width:1100px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;gap:2rem;flex-wrap:wrap}
+.proof-tag{font-family:'DM Mono',monospace;font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.3);white-space:nowrap;flex-shrink:0}
+.proof-stats{display:flex;gap:3rem;flex-wrap:wrap}
+.proof-stat{display:flex;align-items:baseline;gap:.4rem}
+.proof-num{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:500;color:#fff}
+.proof-lbl{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.06em;color:rgba(255,255,255,.4);text-transform:uppercase}
 
 /* SECTIONS */
-.sec{padding:6.5rem 0}
-.sec-dark{padding:6.5rem 0;background:var(--bg-dark)}
-.sec-off{padding:6.5rem 0;background:var(--bg-off)}
-.sec-h2{font-family:'Playfair Display',serif;font-size:clamp(1.85rem,3vw,2.75rem);font-weight:400;line-height:1.18;color:var(--black);margin-bottom:1rem}
+.sec{padding:6rem 0}
+.sec-dark{padding:6rem 0;background:var(--bg-dark)}
+.sec-off{padding:6rem 0;background:var(--bg-off)}
+.sec-blue{padding:6rem 0;background:#0f172a}
+.sec-h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:500;line-height:1.18;color:var(--black);margin-bottom:.9rem}
 .sec-h2 em{font-style:italic;color:var(--gold)}
 .sec-h2-w{color:#fff}
-.sec-sub{font-size:.97rem;font-weight:300;color:var(--mid);line-height:1.8;max-width:560px;margin-bottom:3.25rem}
-.sec-sub-w{color:rgba(255,255,255,.42)}
+.sec-sub{font-size:.97rem;font-weight:300;color:var(--mid);line-height:1.8;max-width:580px;margin-bottom:3rem}
+.sec-sub-w{color:rgba(255,255,255,.5)}
 
-/* ABOUT */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5.5rem;align-items:start}
-.about-body{font-size:.98rem;font-weight:300;line-height:1.92;color:var(--mid)}
-.about-body p{margin-bottom:1.25rem}
-.about-body p:last-child{margin-bottom:0}
-.cred-list{display:flex;flex-direction:column}
-.cred-item{display:flex;gap:1.1rem;align-items:flex-start;padding:1.2rem 0;border-bottom:1px solid var(--border)}
-.cred-item:first-child{border-top:1px solid var(--border)}
-.cred-ico{width:34px;height:34px;flex-shrink:0;background:var(--bg-off);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:.95rem}
-.cred-title{font-size:.88rem;font-weight:700;color:var(--black);margin-bottom:.18rem}
-.cred-sub{font-family:'DM Mono',monospace;font-size:.57rem;letter-spacing:.07em;color:var(--muted);text-transform:uppercase}
+/* PAIN POINTS */
+.pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.pain-card{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:1.6rem;border-left:3px solid transparent;transition:all .25s}
+.pain-card:hover{border-left-color:var(--gold);box-shadow:0 4px 20px rgba(0,0,0,.07);transform:translateY(-2px)}
+.pain-ico{font-size:1.4rem;margin-bottom:.75rem}
+.pain-title{font-size:.92rem;font-weight:600;color:var(--black);margin-bottom:.4rem}
+.pain-desc{font-size:.82rem;font-weight:300;line-height:1.7;color:var(--mid)}
 
-/* WHO */
-.who-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.35rem}
-.who-card{background:var(--bg);border:1px solid var(--border);border-radius:3px;padding:1.85rem 1.65rem;transition:box-shadow .25s,transform .25s}
-.who-card:hover{box-shadow:0 8px 28px rgba(0,0,0,.07);transform:translateY(-3px)}
-.who-ico{font-size:1.4rem;margin-bottom:.9rem}
-.who-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:500;color:var(--black);margin-bottom:.5rem}
-.who-desc{font-size:.83rem;font-weight:300;line-height:1.75;color:var(--mid)}
+/* VS SECTION */
+.vs-section{padding:6rem 0;background:#0f172a}
+.vs-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:2rem;align-items:start;max-width:860px;margin:0 auto}
+.vs-col{border-radius:10px;overflow:hidden}
+.vs-col-bad{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2)}
+.vs-col-good{background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.25)}
+.vs-head{padding:1.25rem 1.5rem;font-weight:700;font-size:.9rem;display:flex;align-items:center;gap:.5rem}
+.vs-head-bad{background:rgba(239,68,68,.12);color:#fca5a5}
+.vs-head-good{background:rgba(16,185,129,.12);color:#6ee7b7}
+.vs-items{padding:.75rem 1.5rem 1.5rem}
+.vs-item{display:flex;align-items:flex-start;gap:.6rem;padding:.6rem 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:.83rem;color:rgba(255,255,255,.6)}
+.vs-item:last-child{border-bottom:none}
+.vs-ico{flex-shrink:0;margin-top:.1rem;font-size:.85rem}
+.vs-mid{display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:2rem;font-weight:400;color:rgba(255,255,255,.15);padding-top:3rem}
+
+/* STARTUP SERVICES */
+.startup-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.startup-card{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:1.75rem;transition:all .25s;position:relative;overflow:hidden}
+.startup-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.startup-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.08);transform:translateY(-3px)}
+.startup-card:hover::after{transform:scaleX(1)}
+.sc-icon{width:40px;height:40px;border-radius:8px;background:linear-gradient(135deg,rgba(196,127,23,.1),rgba(196,127,23,.2));display:flex;align-items:center;justify-content:center;font-size:1.1rem;margin-bottom:1.1rem}
+.sc-title{font-size:.92rem;font-weight:700;color:var(--black);margin-bottom:.5rem}
+.sc-desc{font-size:.8rem;font-weight:300;line-height:1.72;color:var(--mid)}
+.sc-tags{margin-top:1rem;display:flex;flex-wrap:wrap;gap:.35rem}
+.sc-tag{font-family:'DM Mono',monospace;font-size:.55rem;letter-spacing:.06em;text-transform:uppercase;background:var(--bg-off);color:var(--muted);border:1px solid var(--border);padding:.22rem .6rem;border-radius:4px}
+
+/* HOW I WORK */
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.process-step{padding:1.75rem 1.5rem 1.75rem 0;border-right:1px solid var(--border)}
+.process-step:last-child{border-right:none;padding-right:0}
+.process-step:not(:first-child){padding-left:1.5rem}
+.ps-num{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:400;color:var(--border);line-height:1;margin-bottom:.75rem}
+.ps-title{font-size:.88rem;font-weight:700;color:var(--black);margin-bottom:.4rem}
+.ps-desc{font-size:.78rem;font-weight:300;line-height:1.72;color:var(--mid)}
 
 /* EXPERIENCE */
-.exp-layout{display:grid;grid-template-columns:260px 1fr;gap:5rem;align-items:start}
+.exp-layout{display:grid;grid-template-columns:240px 1fr;gap:4.5rem;align-items:start}
 .exp-sticky{position:sticky;top:5rem}
-.exp-h2{font-family:'Playfair Display',serif;font-size:clamp(1.85rem,3vw,2.75rem);font-weight:400;line-height:1.18;color:var(--black);margin-bottom:1.1rem}
+.exp-h2{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:500;line-height:1.2;color:var(--black);margin-bottom:1rem}
 .exp-h2 em{font-style:italic;color:var(--gold)}
-.exp-aside{font-size:.85rem;font-weight:300;line-height:1.82;color:var(--muted);margin-bottom:2rem}
-.exp-stats{display:flex;flex-direction:column}
-.exp-stat{padding:.9rem 0;border-top:1px solid var(--border);display:flex;align-items:baseline;gap:.65rem}
+.exp-stats{display:flex;flex-direction:column;margin-top:1.5rem}
+.exp-stat{padding:.85rem 0;border-top:1px solid var(--border);display:flex;align-items:baseline;gap:.6rem}
 .exp-stat:last-child{border-bottom:1px solid var(--border)}
-.exp-num{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:400;color:var(--black)}
-.exp-lbl{font-family:'DM Mono',monospace;font-size:.55rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
-.exp-narrative{font-size:.98rem;font-weight:300;line-height:1.95;color:#444}
-.exp-narrative p{margin-bottom:1.45rem}
+.exp-num{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:500;color:var(--black)}
+.exp-lbl{font-family:'DM Mono',monospace;font-size:.53rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.exp-narrative{font-size:.95rem;font-weight:300;line-height:1.95;color:#4a5568}
+.exp-narrative p{margin-bottom:1.4rem}
 .exp-narrative p:last-child{margin-bottom:0}
-.exp-narrative strong{font-weight:700;color:var(--black)}
-
-/* SERVICES */
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.07);border-radius:3px;overflow:hidden}
-.svc-card{background:rgba(255,255,255,.02);padding:2.1rem 1.85rem;border-bottom:2px solid transparent;transition:background .22s,border-bottom-color .22s}
-.svc-card:hover{background:rgba(184,145,58,.09);border-bottom-color:var(--gold)}
-.svc-n{font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:400;color:rgba(255,255,255,.05);line-height:1;margin-bottom:1.1rem}
-.svc-title{font-size:.92rem;font-weight:700;color:#fff;margin-bottom:.55rem}
-.svc-desc{font-size:.8rem;font-weight:300;line-height:1.75;color:rgba(255,255,255,.42)}
-.svc-tags{margin-top:1.1rem;display:flex;flex-wrap:wrap;gap:.3rem}
-.svc-tag{font-family:'DM Mono',monospace;font-size:.54rem;letter-spacing:.07em;text-transform:uppercase;color:rgba(255,255,255,.28);border:1px solid rgba(255,255,255,.1);padding:.22rem .55rem;border-radius:2px}
-
-/* PROCESS */
-.process-row{display:grid;grid-template-columns:repeat(4,1fr)}
-.process-step{padding:2rem 1.6rem 2rem 0;border-right:1px solid var(--border)}
-.process-step:last-child{border-right:none;padding-right:0}
-.process-step:not(:first-child){padding-left:1.6rem}
-.step-n{font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:400;color:var(--border);line-height:1;margin-bottom:.9rem}
-.step-title{font-size:.88rem;font-weight:700;color:var(--black);margin-bottom:.45rem}
-.step-desc{font-size:.8rem;font-weight:300;line-height:1.75;color:var(--mid)}
+.exp-narrative strong{font-weight:600;color:var(--black)}
 
 /* IMPACT */
-.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.35rem}
-.impact-card{border:1px solid var(--border);border-radius:3px;padding:1.85rem 1.65rem;border-top:3px solid transparent;transition:border-top-color .25s,box-shadow .25s}
-.impact-card:hover{border-top-color:var(--gold);box-shadow:0 8px 28px rgba(0,0,0,.06)}
-.impact-val{font-family:'Playfair Display',serif;font-size:2.1rem;font-weight:400;color:var(--black);margin-bottom:.35rem;line-height:1}
-.impact-title{font-size:.85rem;font-weight:700;color:var(--black);margin-bottom:.45rem}
-.impact-desc{font-size:.78rem;font-weight:300;line-height:1.75;color:var(--muted)}
+.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.impact-card{border:1px solid var(--border);border-radius:8px;padding:1.75rem;border-top:3px solid transparent;transition:all .25s}
+.impact-card:hover{border-top-color:var(--gold);box-shadow:0 6px 24px rgba(0,0,0,.07)}
+.impact-val{font-family:'Playfair Display',serif;font-size:2rem;font-weight:500;color:var(--black);line-height:1;margin-bottom:.3rem}
+.impact-title{font-size:.85rem;font-weight:700;color:var(--black);margin-bottom:.4rem}
+.impact-desc{font-size:.77rem;font-weight:300;line-height:1.72;color:var(--muted)}
 
 /* SKILLS */
-.skills-layout{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem}
-.skg-title{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:1.1rem;padding-bottom:.7rem;border-bottom:1px solid var(--border)}
-.skill-pills{display:flex;flex-wrap:wrap;gap:.45rem}
-.skill-pill{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.04em;background:var(--bg);color:var(--mid);border:1px solid var(--border);padding:.38rem .8rem;border-radius:2px;transition:all .18s}
+.skills-layout{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.skg-title{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;padding-bottom:.65rem;border-bottom:1px solid var(--border)}
+.skill-pills{display:flex;flex-wrap:wrap;gap:.4rem}
+.skill-pill{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.04em;background:var(--bg);color:var(--mid);border:1px solid var(--border);padding:.35rem .75rem;border-radius:4px;transition:all .18s}
 .skill-pill:hover{border-color:var(--gold);color:var(--gold);background:#fffbf2}
-.tools-grid{grid-column:1/-1;margin-top:.5rem;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border);border-radius:3px;overflow:hidden}
-.tool-cell{padding:1.2rem 1rem;border-right:1px solid var(--border);display:flex;align-items:center;gap:.6rem;background:var(--bg);transition:background .18s}
-.tool-cell:last-child{border-right:none}
+.tools-grid{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-top:.5rem}
+.tool-cell{padding:1.1rem 1rem;border-right:1px solid var(--border);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.6rem;background:var(--bg);transition:background .18s}
+.tool-cell:nth-child(3n){border-right:none}
+.tool-cell:nth-last-child(-n+3){border-bottom:none}
 .tool-cell:hover{background:#fffbf2}
-.tool-ico{font-size:.95rem;flex-shrink:0}
-.tool-lbl{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.04em;color:var(--mid)}
+.tool-ico{font-size:.9rem;flex-shrink:0}
+.tool-lbl{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.04em;color:var(--mid)}
 
 /* TESTIMONIALS */
-.testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.35rem}
-.testi-card{background:var(--bg-off);border:1px solid var(--border);border-radius:3px;padding:2rem 2rem 1.75rem}
-.testi-q{font-family:'Playfair Display',serif;font-size:3.5rem;color:var(--border);line-height:.6;margin-bottom:1rem}
-.testi-body{font-family:'Playfair Display',serif;font-size:.97rem;font-style:italic;line-height:1.75;color:var(--charcoal);margin-bottom:1.5rem}
-.testi-person{display:flex;align-items:center;gap:.7rem}
-.testi-av{width:34px;height:34px;border-radius:50%;background:var(--border);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:.8rem;color:var(--muted);flex-shrink:0}
-.testi-name{font-size:.8rem;font-weight:700;color:var(--black)}
-.testi-role{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
-.testi-note{text-align:center;margin-top:2rem;font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.08em;color:var(--muted)}
+.testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:1.5rem}
+.testi-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:1.75rem}
+.testi-q{font-family:'Playfair Display',serif;font-size:3rem;color:rgba(255,255,255,.1);line-height:.5;margin-bottom:.9rem}
+.testi-body{font-family:'Playfair Display',serif;font-size:.93rem;font-style:italic;line-height:1.75;color:rgba(255,255,255,.75);margin-bottom:1.4rem}
+.testi-person{display:flex;align-items:center;gap:.65rem}
+.testi-av{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:.75rem;color:rgba(255,255,255,.5);flex-shrink:0}
+.testi-name{font-size:.8rem;font-weight:600;color:#fff}
+.testi-role{font-family:'DM Mono',monospace;font-size:.54rem;letter-spacing:.07em;text-transform:uppercase;color:rgba(255,255,255,.35)}
+.testi-note{text-align:center;font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.08em;color:rgba(255,255,255,.25);margin-top:1.25rem}
+
+/* LEAD MAGNET */
+.lead-section{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);padding:5rem 0}
+.lead-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.lead-h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:500;color:#fff;line-height:1.2;margin-bottom:1rem}
+.lead-h2 em{font-style:italic;color:var(--gold)}
+.lead-sub{font-size:.95rem;font-weight:300;color:rgba(255,255,255,.5);line-height:1.8;margin-bottom:1.75rem}
+.lead-list{display:flex;flex-direction:column;gap:.65rem;margin-bottom:1.75rem}
+.lead-item{display:flex;align-items:flex-start;gap:.65rem;font-size:.87rem;color:rgba(255,255,255,.7)}
+.lead-item-ico{color:var(--green);flex-shrink:0;margin-top:.1rem}
+.lead-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:2rem}
+.lead-card-tag{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem}
+.lead-card-title{font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;margin-bottom:.5rem}
+.lead-card-sub{font-size:.82rem;color:rgba(255,255,255,.45);margin-bottom:1.5rem;line-height:1.6}
+.lead-form-field{width:100%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:6px;padding:.75rem 1rem;font-size:.88rem;color:#fff;margin-bottom:.75rem;font-family:'Inter',sans-serif;outline:none;transition:border-color .2s}
+.lead-form-field:focus{border-color:var(--gold)}
+.lead-form-field::placeholder{color:rgba(255,255,255,.3)}
+.lead-submit{width:100%;background:var(--gold);color:#fff;border:none;border-radius:6px;padding:.85rem;font-size:.9rem;font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;transition:all .2s}
+.lead-submit:hover{background:var(--gold-light);transform:translateY(-1px)}
 
 /* CTA */
-.cta-wrap{text-align:center;position:relative;overflow:hidden}
-.cta-wrap::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 55% 50%,rgba(184,145,58,.09) 0%,transparent 68%);pointer-events:none}
-.cta-wrap .label{justify-content:center}
-.cta-h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:400;color:#fff;line-height:1.2;margin-bottom:1.2rem}
-.cta-h2 em{font-style:italic;color:var(--gold)}
-.cta-sub{font-size:.97rem;font-weight:300;color:rgba(255,255,255,.42);max-width:480px;margin:0 auto 2.4rem;line-height:1.82}
-.cta-btns{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
-.cta-contact{margin-top:3rem;padding-top:2.75rem;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:center;gap:3rem;flex-wrap:wrap}
-.cta-ci{display:flex;align-items:center;gap:.55rem;font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.07em;color:rgba(255,255,255,.38)}
+.cta-section{background:var(--gold);padding:5rem 0}
+.cta-inner{text-align:center}
+.cta-h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:500;color:#fff;line-height:1.2;margin-bottom:1rem}
+.cta-h2 em{font-style:italic}
+.cta-sub{font-size:1rem;color:rgba(255,255,255,.8);max-width:520px;margin:0 auto 2.25rem;line-height:1.8;font-weight:300}
+.cta-btns{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.cta-contact{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap}
+.cta-ci{display:flex;align-items:center;gap:.5rem;font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.07em;color:rgba(255,255,255,.7)}
 
 /* FOOTER */
-footer{background:#080808;padding:1.75rem 0;border-top:1px solid rgba(255,255,255,.05)}
-.footer-inner{max-width:1080px;margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center}
-.footer-logo{font-family:'Playfair Display',serif;font-size:1rem;color:rgba(255,255,255,.35)}
-.footer-copy{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.1em;color:rgba(255,255,255,.18)}
+footer{background:#050505;padding:2rem 0;border-top:1px solid rgba(255,255,255,.05)}
+.footer-inner{max-width:1100px;margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-logo-wrap{}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1rem;color:rgba(255,255,255,.5)}
+.footer-tagline{font-family:'DM Mono',monospace;font-size:.52rem;letter-spacing:.08em;color:rgba(255,255,255,.2);text-transform:uppercase;margin-top:.2rem}
+.footer-copy{font-family:'DM Mono',monospace;font-size:.54rem;letter-spacing:.08em;color:rgba(255,255,255,.15)}
 .footer-links{display:flex;gap:1.5rem}
-.footer-links a{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.08em;color:rgba(255,255,255,.22);text-decoration:none;transition:color .2s}
+.footer-links a{font-family:'DM Mono',monospace;font-size:.54rem;letter-spacing:.08em;color:rgba(255,255,255,.2);text-decoration:none;transition:color .2s}
 .footer-links a:hover{color:var(--gold)}
 
 /* ANIMATIONS */
-@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
-.au{opacity:0}
-.au.in{animation:fadeUp .65s ease forwards}
-.d1{animation-delay:.08s}.d2{animation-delay:.18s}.d3{animation-delay:.3s}.d4{animation-delay:.42s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.au{opacity:0}.au.in{animation:fadeUp .6s ease forwards}
+.d1{animation-delay:.08s}.d2{animation-delay:.18s}.d3{animation-delay:.28s}.d4{animation-delay:.4s}
 
 /* RESPONSIVE */
-@media(max-width:860px){
+@media(max-width:900px){
   .nav-links{display:none}
-  .hero{grid-template-columns:1fr;min-height:auto;padding-top:80px;padding-bottom:3.5rem;gap:2.5rem}
-  .about-grid{grid-template-columns:1fr;gap:2.5rem}
-  .who-grid{grid-template-columns:1fr 1fr}
-  .exp-layout{grid-template-columns:1fr;gap:2.5rem}
+  .hero-inner{grid-template-columns:1fr;min-height:auto;padding:2rem 0 3rem}
+  .pain-grid,.startup-grid,.impact-grid{grid-template-columns:1fr 1fr}
+  .vs-grid{grid-template-columns:1fr;gap:1rem}
+  .vs-mid{display:none}
+  .exp-layout{grid-template-columns:1fr;gap:2rem}
   .exp-sticky{position:static}
-  .svc-grid{grid-template-columns:1fr 1fr}
-  .process-row{grid-template-columns:1fr 1fr;gap:2rem}
-  .process-step{border-right:none;padding-left:0!important;padding-right:0;border-bottom:1px solid var(--border);padding-bottom:2rem}
+  .process-grid{grid-template-columns:1fr 1fr;gap:2rem}
+  .process-step{border-right:none;padding-left:0!important;padding-right:0;border-bottom:1px solid var(--border);padding-bottom:1.75rem}
   .process-step:nth-child(3),.process-step:nth-child(4){border-bottom:none}
-  .impact-grid{grid-template-columns:1fr 1fr}
   .skills-layout{grid-template-columns:1fr}
-  .tools-grid{grid-template-columns:repeat(3,1fr)}
   .testi-grid{grid-template-columns:1fr}
-  .sec,.sec-dark,.sec-off{padding:4rem 0}
-  .cta-contact{gap:1.5rem}
-  .footer-inner{flex-direction:column;gap:.75rem;text-align:center}
+  .lead-inner{grid-template-columns:1fr;gap:2.5rem}
+  .sec,.sec-dark,.sec-off,.sec-blue,.vs-section,.lead-section{padding:4rem 0}
+  .footer-inner{flex-direction:column;text-align:center}
+  .proof-stats{gap:1.5rem}
 }
 @media(max-width:560px){
-  .who-grid{grid-template-columns:1fr}
-  .svc-grid{grid-template-columns:1fr}
-  .impact-grid{grid-template-columns:1fr}
-  .proof-list{gap:1rem}
+  .pain-grid,.startup-grid,.impact-grid{grid-template-columns:1fr}
+  .tools-grid{grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
@@ -235,185 +270,235 @@ footer{background:#080808;padding:1.75rem 0;border-top:1px solid rgba(255,255,25
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a class="nav-logo" href="#">Harshit Dusad</a>
+    <a class="nav-logo-wrap" href="#" style="text-decoration:none">
+      <div class="nav-logo">HM Advisory</div>
+      <div class="nav-logo-sub">Fractional CFO · FP&amp;A Consultant</div>
+    </a>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
+      <li><a href="#pain">Who I Help</a></li>
       <li><a href="#services">Services</a></li>
+      <li><a href="#vs">Why Not a CFO</a></li>
       <li><a href="#experience">Experience</a></li>
-      <li><a href="#impact">Impact</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a class="nav-cta" href="mailto:dusad000@gmail.com">Book a Call</a>
+    <a class="nav-cta" href="mailto:hmadvisory11@gmail.com">Book Free 30-Min Call</a>
   </div>
 </nav>
 
 <!-- HERO -->
-<div style="padding-top:62px">
-  <div class="hero">
-    <div>
-      <div class="hero-eyebrow au d1">FP&amp;A Consultant · Chartered Accountant · AI-Powered Finance</div>
-      <h1 class="hero-h1 au d2">Turning complex<br>finances into<br><em>clear decisions.</em></h1>
-      <p class="hero-sub au d3">Senior finance consultant with 8+ years inside global enterprises. I combine deep FP&amp;A expertise with AI-driven automation to help leadership teams build stronger forecasts, cleaner reporting, and smarter financial strategy — so the numbers actively drive business forward.</p>
-      <div class="hero-btns au d4">
-        <a class="btn btn-dark" href="mailto:dusad000@gmail.com">Start a Conversation</a>
-        <a class="btn btn-ghost" href="#services">See My Services</a>
-      </div>
-    </div>
-    <div class="au d3">
-      <div class="hero-card">
-        <div class="hc-name">Harshit Dusad</div>
-        <div class="hc-role">CA · FP&amp;A Consultant · AI-Augmented Finance</div>
-        <div class="hc-rule"></div>
-        <div class="hc-metrics">
-          <div class="hc-metric"><div class="hc-val">8+</div><div class="hc-lbl">Years in global finance leadership</div></div>
-          <div class="hc-metric"><div class="hc-val">$826M</div><div class="hc-lbl">Capital assets validated, zero audit findings</div></div>
-          <div class="hc-metric"><div class="hc-val">$5M</div><div class="hc-lbl">Profitability improvement delivered</div></div>
-          <div class="hc-metric"><div class="hc-val">95%</div><div class="hc-lbl">Financial exposure reduced on $500M+ portfolio</div></div>
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-badge au d1"><div class="hero-badge-dot"></div> Now Accepting New Clients · Startups, Scale-ups &amp; Growing Businesses</div>
+        <h1 class="hero-h1 au d2">Senior finance leadership<br>your business can <em>actually afford.</em></h1>
+        <p class="hero-punchline au d3">Your Numbers Should Work as Hard as You Do.</p>
+        <p class="hero-sub au d3">Fractional CFO &amp; FP&amp;A Consultant helping startups, scale-ups, and growing businesses build investor-grade finance systems, improve profitability, and make smarter decisions — without the cost of a full-time CFO.</p>
+        <div class="hero-ctas au d4">
+          <a class="btn btn-primary" href="mailto:hmadvisory11@gmail.com">📅 Book Free 30-Min Strategy Call</a>
+          <a class="btn btn-ghost" href="#services">See How I Help</a>
         </div>
-        <div class="hc-footer">
-          <div class="avail-dot"></div>
-          <div class="avail-txt">Currently accepting new engagements</div>
+        <div class="hero-trust au d4">
+          <span class="hero-trust-label">Trusted across</span>
+          <div class="trust-pills">
+            <span class="trust-pill">SaaS</span>
+            <span class="trust-pill">Fintech</span>
+            <span class="trust-pill">HealthTech</span>
+            <span class="trust-pill">B2B</span>
+            <span class="trust-pill">PE-Backed</span>
+          </div>
+        </div>
+      </div>
+      <div class="au d3">
+        <div class="hero-card">
+          <div class="hc-top">
+            <div class="hc-avatar">HD</div>
+            <div>
+              <div class="hc-name">HM Advisory</div>
+              <div class="hc-role">Led by Harshit Dusad, CA · Fractional CFO · AI-Augmented Finance</div>
+            </div>
+          </div>
+          <div class="hc-metrics">
+            <div class="hc-metric"><div class="hc-val">8+</div><div class="hc-lbl">Years senior finance leadership across global enterprises</div></div>
+            <div class="hc-metric"><div class="hc-val">$10M+</div><div class="hc-lbl">Value created across profitability, cost savings &amp; transformation</div></div>
+          </div>
+          <div class="hc-footer">
+            <div class="hc-avail"><div class="avail-dot"></div><div class="avail-txt">Available for new engagements now</div></div>
+            <a class="hc-cta" href="mailto:hmadvisory11@gmail.com">Get a Free Finance Health Check →</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- PROOF BAR -->
+<!-- SECTOR BAR -->
 <div class="proof-bar">
   <div class="proof-inner">
-    <div class="proof-tag">Sectors</div>
-    <div class="proof-list">
-      <span class="proof-item">Global Insurance Operations</span>
-      <span class="proof-dot">·</span>
-      <span class="proof-item">Technology &amp; SaaS</span>
-      <span class="proof-dot">·</span>
-      <span class="proof-item">IT Services &amp; Consulting</span>
-      <span class="proof-dot">·</span>
-      <span class="proof-item">Telecom</span>
-      <span class="proof-dot">·</span>
-      <span class="proof-item">Healthcare</span>
+    <div class="proof-tag">I work with</div>
+    <div class="proof-stats">
+      <div class="proof-stat"><div class="proof-lbl" style="color:rgba(255,255,255,.6);font-size:.7rem">🌱 Startups &amp; Scale-ups</div></div>
+      <div class="proof-stat"><div class="proof-lbl" style="color:rgba(255,255,255,.25)">·</div></div>
+      <div class="proof-stat"><div class="proof-lbl" style="color:rgba(255,255,255,.6);font-size:.7rem">🏢 Growing Businesses</div></div>
+      <div class="proof-stat"><div class="proof-lbl" style="color:rgba(255,255,255,.25)">·</div></div>
+      <div class="proof-stat"><div class="proof-lbl" style="color:rgba(255,255,255,.6);font-size:.7rem">💻 SaaS &amp; Tech</div></div>
+      <div class="proof-stat"><div class="proof-lbl" style="color:rgba(255,255,255,.25)">·</div></div>
+      <div class="proof-stat"><div class="proof-lbl" style="color:rgba(255,255,255,.6);font-size:.7rem">🏥 HealthTech</div></div>
+      <div class="proof-stat"><div class="proof-lbl" style="color:rgba(255,255,255,.25)">·</div></div>
+      <div class="proof-stat"><div class="proof-lbl" style="color:rgba(255,255,255,.6);font-size:.7rem">💳 Fintech</div></div>
+      <div class="proof-stat"><div class="proof-lbl" style="color:rgba(255,255,255,.25)">·</div></div>
+      <div class="proof-stat"><div class="proof-lbl" style="color:rgba(255,255,255,.6);font-size:.7rem">🌍 PE-Backed &amp; Global</div></div>
     </div>
   </div>
 </div>
 
-<!-- ABOUT -->
-<section class="sec" id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div>
-        <div class="label">About</div>
-        <h2 class="sec-h2">Finance that informs<br>every <em>big decision.</em></h2>
-        <div class="about-body">
-          <p>I am a Chartered Accountant and senior FP&amp;A consultant with over eight years of experience embedded inside some of the most demanding global finance environments — spanning multi-entity insurance operations, hyper-growth technology ventures, large-scale IT services organisations, and regulated healthcare businesses.</p>
-          <p>My work sits at the intersection of financial rigour, strategic influence, and modern technology. I do not just produce reports — I shape the narratives that leadership uses to make consequential decisions. I apply Generative AI and intelligent automation to accelerate analysis, eliminate manual bottlenecks, and surface insights that traditional reporting simply cannot deliver at speed.</p>
-          <p>I work with organisations on a flexible basis — from focused project engagements to ongoing advisory partnerships — bringing senior finance capability precisely where and when it is needed.</p>
-        </div>
-      </div>
-      <div>
-        <div class="label">Credentials</div>
-        <div class="cred-list">
-          <div class="cred-item">
-            <div class="cred-ico">🏛️</div>
-            <div><div class="cred-title">Chartered Accountant (CA)</div><div class="cred-sub">Institute of Chartered Accountants of India · 2017</div></div>
-          </div>
-          <div class="cred-item">
-            <div class="cred-ico">🎓</div>
-            <div><div class="cred-title">B.Com — Accounting &amp; Finance</div><div class="cred-sub">Rajasthan University · 2014</div></div>
-          </div>
-          <div class="cred-item">
-            <div class="cred-ico">🤖</div>
-            <div><div class="cred-title">Generative AI Mastermind</div><div class="cred-sub">Outskill Certification · 2026 · Applied to FP&amp;A &amp; Finance Automation</div></div>
-          </div>
-          <div class="cred-item">
-            <div class="cred-ico">🌍</div>
-            <div><div class="cred-title">Global Finance Experience</div><div class="cred-sub">Multi-geography · Cross-border enterprise operations</div></div>
-          </div>
-          <div class="cred-item">
-            <div class="cred-ico">💬</div>
-            <div><div class="cred-title">Languages</div><div class="cred-sub">English (Fluent) · Hindi (Native)</div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<hr class="hr">
-
-<!-- WHO I WORK WITH -->
-<section class="sec-off" id="who">
+<!-- PAIN POINTS -->
+<section class="sec" id="pain">
   <div class="container">
     <div class="label">Who I Work With</div>
-    <h2 class="sec-h2">Built for leaders who need<br><em>answers, not just reports.</em></h2>
-    <p class="sec-sub">I work best with organisations at a point of complexity — where the finance function needs to do more than record history and start shaping what comes next.</p>
-    <div class="who-grid">
-      <div class="who-card"><div class="who-ico">📊</div><div class="who-title">CFOs &amp; Finance Directors</div><div class="who-desc">Seeking a trusted partner to own FP&amp;A, elevate reporting quality, and free the core team to focus on strategic work.</div></div>
-      <div class="who-card"><div class="who-ico">🚀</div><div class="who-title">Scale-up &amp; Growth Businesses</div><div class="who-desc">Rapidly growing companies that need rigorous financial planning and forecasting to match the ambition of their leadership team.</div></div>
-      <div class="who-card"><div class="who-ico">🏢</div><div class="who-title">Multinationals &amp; Enterprises</div><div class="who-desc">Large organisations managing complex, multi-entity financial environments that require consolidation, controls, and executive clarity.</div></div>
-      <div class="who-card"><div class="who-ico">🔄</div><div class="who-title">Finance Transformation Projects</div><div class="who-desc">Businesses ready to automate reporting, standardise processes, and build a finance function that scales without proportional headcount.</div></div>
-      <div class="who-card"><div class="who-ico">🎯</div><div class="who-title">PE-Backed Portfolios</div><div class="who-desc">Businesses that need rigorous financial modelling, variance analysis, and investor-grade reporting from day one.</div></div>
-      <div class="who-card"><div class="who-ico">⚡</div><div class="who-title">Interim Finance Cover</div><div class="who-desc">Organisations between hires or navigating a critical period who need an experienced hand to keep finance at full strength.</div></div>
+    <h2 class="sec-h2">Built for businesses that need<br><em>finance to drive growth.</em></h2>
+    <p class="sec-sub">Whether you're an early-stage startup or an established business, I work with leaders who want finance to be a strategic advantage — not just a back-office function.</p>
+    <div class="who-grid" style="margin-bottom:4rem">
+      <div class="who-card"><div class="who-ico">🌱</div><div class="who-title">Startups &amp; Early-Stage</div><div class="who-desc">Seed and Series A founders who need finance infrastructure built right from the start — runway visibility, investor reporting, and models that hold up to scrutiny.</div></div>
+      <div class="who-card"><div class="who-ico">🚀</div><div class="who-title">Scale-ups &amp; Growth Companies</div><div class="who-desc">Fast-growing businesses where finance needs to keep pace — tighter forecasting, better board reporting, and cleaner P&amp;L visibility as complexity increases.</div></div>
+      <div class="who-card"><div class="who-ico">🏢</div><div class="who-title">Established Businesses</div><div class="who-desc">Companies that have outgrown their current finance processes and need a senior partner to modernise reporting, automate workflows, and improve financial controls.</div></div>
+      <div class="who-card"><div class="who-ico">🎯</div><div class="who-title">PE-Backed &amp; Investor-Led</div><div class="who-desc">Businesses with investors or board members who demand rigorous financial reporting, variance analysis, and strategic planning support every quarter.</div></div>
+      <div class="who-card"><div class="who-ico">📈</div><div class="who-title">Pre-Fundraise Businesses</div><div class="who-desc">Any business approaching a capital raise — Seed, Series A, or beyond — that needs its financial story, data room, and model to be genuinely investor-grade.</div></div>
+      <div class="who-card"><div class="who-ico">⚡</div><div class="who-title">Businesses Between Hires</div><div class="who-desc">You've lost a finance lead or never had one. You need experienced hands keeping finance running at full strength while you find the right permanent person.</div></div>
+    </div>
+    <div class="label">Sound Familiar?</div>
+    <h2 class="sec-h2">Finance challenges I solve<br><em>every day.</em></h2>
+    <p class="sec-sub">From early-stage startups to established businesses — these are the problems leaders bring to me most often.</p>
+    <div class="pain-grid">
+      <div class="pain-card"><div class="pain-ico">📉</div><div class="pain-title">No reliable cash runway visibility</div><div class="pain-desc">You're not sure exactly how many months of runway you have — and that uncertainty is making every decision harder.</div></div>
+      <div class="pain-card"><div class="pain-ico">📊</div><div class="pain-title">Investors asking for better reporting</div><div class="pain-desc">Your board or investors are requesting cleaner dashboards, variance analysis, or KPI tracking you don't yet have in place.</div></div>
+      <div class="pain-card"><div class="pain-ico">🔮</div><div class="pain-title">Forecasts that change every month</div><div class="pain-desc">You're updating your financial model constantly but it never feels accurate enough to trust for real decisions.</div></div>
+      <div class="pain-card"><div class="pain-ico">📁</div><div class="pain-title">Finance still done manually in Excel</div><div class="pain-desc">Your team is spending hours every week building reports in spreadsheets that could be automated in days.</div></div>
+      <div class="pain-card"><div class="pain-ico">💸</div><div class="pain-title">Burn rate not under control</div><div class="pain-desc">Costs are growing faster than revenue and you need someone to identify exactly where margins are leaking.</div></div>
+      <div class="pain-card"><div class="pain-ico">🚀</div><div class="pain-title">Fundraising coming up — finance not ready</div><div class="pain-desc">Your next raise is approaching and your financial story, models, and data room aren't investor-grade yet.</div></div>
     </div>
   </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section class="sec" id="experience">
+<!-- VS SECTION -->
+<section class="vs-section" id="vs">
   <div class="container">
-    <div class="exp-layout">
-      <div class="exp-sticky">
-        <div class="label">Experience</div>
-        <h2 class="exp-h2">8+ years.<br>Every<br><em>industry.</em></h2>
-        <p class="exp-aside">A career built across global enterprises, high-growth ventures, and regulated industries — always at the centre of financial decision-making.</p>
-        <div class="exp-stats">
-          <div class="exp-stat"><div class="exp-num">$500M+</div><div class="exp-lbl">Balance sheet standardised</div></div>
-          <div class="exp-stat"><div class="exp-num">$826M</div><div class="exp-lbl">Capital assets secured</div></div>
-          <div class="exp-stat"><div class="exp-num">$7.5M</div><div class="exp-lbl">Accrual liability removed</div></div>
-          <div class="exp-stat"><div class="exp-num">$5M</div><div class="exp-lbl">Profitability delivered</div></div>
+    <div class="label" style="color:rgba(196,127,23,.8)">Why Work With Me</div>
+    <h2 class="sec-h2 sec-h2-w" style="text-align:center;margin-bottom:.5rem">Why startups choose me<br>over hiring a <em>full-time CFO.</em></h2>
+    <p class="sec-sub sec-sub-w" style="text-align:center;margin:0 auto 3rem">Senior finance expertise, without the full-time price tag.</p>
+    <div class="vs-grid">
+      <div class="vs-col vs-col-bad">
+        <div class="vs-head vs-head-bad">❌ Hiring a Full-Time CFO</div>
+        <div class="vs-items">
+          <div class="vs-item"><div class="vs-ico">💰</div>$150,000–$250,000+ per year salary</div>
+          <div class="vs-item"><div class="vs-ico">⏳</div>3–6 months to hire the right person</div>
+          <div class="vs-item"><div class="vs-ico">📋</div>Benefits, equity, and overhead on top</div>
+          <div class="vs-item"><div class="vs-ico">🔒</div>Fixed cost even when workload is low</div>
+          <div class="vs-item"><div class="vs-ico">🎯</div>Often overqualified for early-stage needs</div>
+          <div class="vs-item"><div class="vs-ico">📉</div>Risk of wrong hire at a critical stage</div>
         </div>
       </div>
-      <div class="exp-narrative">
-        <p>My career in finance began in internal audit — an environment that instilled in me an uncompromising standard for financial controls, compliance, and operational integrity. Reporting directly to a CFO, I led audit operations across multiple zones, conducted variance analysis, inventory audits, and MIS reviews, and owned cost analysis, bid computations, and lease-versus-buy evaluations. That foundation shaped everything that followed.</p>
-        <p>From there I moved into FP&amp;A, spending several years building my core analytical capability inside a large multinational services organisation. I led revenue forecasting, variance analysis, and three-year financial planning across a broad portfolio of business units and geographies — with outputs feeding directly into CEO and CFO-level strategy. I automated the full suite of MIS reports, scorecards, dashboards, and incentive analytics, achieving a step-change in the speed and quality of financial intelligence reaching executive leadership.</p>
-        <p>In a high-growth global venture, I took full ownership of country-level P&amp;L and cash flow forecasting for a rapidly scaling business — building the Annual Operating Plan, running rolling forecasts, and presenting monthly performance directly to the C-suite. The centrepiece outcome was a <strong>$5M profitability improvement</strong> delivered through disciplined cost optimisation and margin analysis, alongside full automation of the MIS and management reporting suite.</p>
-        <p>In my most senior roles, I have operated as a finance transformation leader inside a large, multi-entity global enterprise — taking full ownership of FP&amp;A, month-end close, and executive reporting. I standardised <strong>over $500M in balance sheet reconciliations</strong> across three entities, reducing financial exposure by up to 95%. I led the substantiation of <strong>$826M in capital assets</strong> in direct collaboration with audit and executive leadership — with zero material findings. I eliminated <strong>$7.5M in accrual liability</strong> through vendor and accrual framework redesign, and delivered significant headcount savings through automation and AI-powered process transformation. Throughout, I served as a close strategic partner to senior leadership on five-year planning, headcount analytics, and multi-region rolling forecasts.</p>
-        <p>Across every role, my purpose has been the same: make the finance function a genuine driver of business performance — not just a recorder of it.</p>
+      <div class="vs-mid">vs</div>
+      <div class="vs-col vs-col-good">
+        <div class="vs-head vs-head-good">✅ Working With Harshit</div>
+        <div class="vs-items">
+          <div class="vs-item"><div class="vs-ico">✅</div>Fraction of a full-time CFO cost</div>
+          <div class="vs-item"><div class="vs-ico">⚡</div>Onboard and delivering within days</div>
+          <div class="vs-item"><div class="vs-ico">🎯</div>Pay only for what your startup needs</div>
+          <div class="vs-item"><div class="vs-ico">📈</div>Scale up or down as you grow</div>
+          <div class="vs-item"><div class="vs-ico">🤖</div>AI-augmented — faster, deeper analysis</div>
+          <div class="vs-item"><div class="vs-ico">🏆</div>8+ years of enterprise-grade expertise</div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<hr class="hr">
-
-<!-- SERVICES -->
-<section class="sec-dark" id="services">
+<!-- STARTUP SERVICES -->
+<section class="sec-off" id="services">
   <div class="container">
-    <div class="label">What I Offer</div>
-    <h2 class="sec-h2 sec-h2-w">Services built around<br><em>outcomes, not hours.</em></h2>
-    <p class="sec-sub sec-sub-w">Every engagement is structured around what your business actually needs — from a focused project to a sustained advisory partnership.</p>
-    <div class="svc-grid">
-      <div class="svc-card"><div class="svc-n">01</div><div class="svc-title">FP&amp;A Advisory</div><div class="svc-desc">End-to-end financial planning and analysis — annual operating plans, rolling forecasts, variance analysis, and executive reporting frameworks that give leadership real clarity.</div><div class="svc-tags"><span class="svc-tag">Budgeting</span><span class="svc-tag">AOP</span><span class="svc-tag">Rolling Forecasts</span><span class="svc-tag">Variance Analysis</span></div></div>
-      <div class="svc-card"><div class="svc-n">02</div><div class="svc-title">Financial Modelling</div><div class="svc-desc">Dynamic, decision-ready financial models for scenario planning, M&amp;A, investment decisions, and long-range strategic planning — built to be used, not filed away.</div><div class="svc-tags"><span class="svc-tag">3-Statement Models</span><span class="svc-tag">Scenario Planning</span><span class="svc-tag">Valuation</span></div></div>
-      <div class="svc-card"><div class="svc-n">03</div><div class="svc-title">Finance Transformation &amp; AI Automation</div><div class="svc-desc">Combining process redesign with Generative AI and intelligent automation to eliminate manual effort, accelerate reporting cycles, and build finance functions that scale without proportional headcount.</div><div class="svc-tags"><span class="svc-tag">AI Automation</span><span class="svc-tag">Process Design</span><span class="svc-tag">Power BI</span><span class="svc-tag">IBM TM1</span></div></div>
-      <div class="svc-card"><div class="svc-n">04</div><div class="svc-title">Management Reporting &amp; MIS</div><div class="svc-desc">Executive dashboards and MIS frameworks that give your leadership team decision-ready financial intelligence — accurate, timely, and designed to drive action.</div><div class="svc-tags"><span class="svc-tag">KPI Dashboards</span><span class="svc-tag">MIS Design</span><span class="svc-tag">Board Reporting</span></div></div>
-      <div class="svc-card"><div class="svc-n">05</div><div class="svc-title">Performance &amp; Profitability</div><div class="svc-desc">Revenue analytics, margin improvement, cost optimisation, and profitability reviews — translating operational data into the strategic direction your business needs.</div><div class="svc-tags"><span class="svc-tag">P&amp;L Analysis</span><span class="svc-tag">Margin Analysis</span><span class="svc-tag">Cost Optimisation</span></div></div>
-      <div class="svc-card"><div class="svc-n">06</div><div class="svc-title">AI-Powered Finance Advisory</div><div class="svc-desc">Applying Generative AI tools and intelligent automation to FP&amp;A workflows — from AI-assisted forecasting and variance commentary to automated report generation and predictive financial analysis.</div><div class="svc-tags"><span class="svc-tag">Generative AI</span><span class="svc-tag">AI Forecasting</span><span class="svc-tag">Automation</span><span class="svc-tag">Predictive Analytics</span></div></div>
+    <div class="label">What I Do</div>
+    <h2 class="sec-h2">Everything your business needs<br><em>from a senior finance partner.</em></h2>
+    <p class="sec-sub">From building finance infrastructure from scratch to optimising a mature finance function — structured around outcomes, not hours.</p>
+    <div class="startup-grid">
+      <div class="startup-card">
+        <div class="sc-icon">🏗️</div>
+        <div class="sc-title">Finance Infrastructure Setup</div>
+        <div class="sc-desc">Building your finance function from scratch — chart of accounts, reporting structure, budgeting process, and controls — so you have a solid foundation before you scale or raise.</div>
+        <div class="sc-tags"><span class="sc-tag">Finance Setup</span><span class="sc-tag">Chart of Accounts</span><span class="sc-tag">Controls</span><span class="sc-tag">Process Design</span></div>
+      </div>
+      <div class="startup-card">
+        <div class="sc-icon">🏃</div>
+        <div class="sc-title">Cash Runway &amp; Burn Rate Planning</div>
+        <div class="sc-desc">Know exactly how long your cash lasts, where it's going, and what levers to pull to extend your runway before the next raise.</div>
+        <div class="sc-tags"><span class="sc-tag">Runway Modelling</span><span class="sc-tag">Burn Analysis</span><span class="sc-tag">Cash Planning</span></div>
+      </div>
+      <div class="startup-card">
+        <div class="sc-icon">📊</div>
+        <div class="sc-title">Investor &amp; Board Reporting</div>
+        <div class="sc-desc">Investor-grade monthly and quarterly reports, KPI dashboards, and board packs that give your stakeholders the clarity and confidence they need.</div>
+        <div class="sc-tags"><span class="sc-tag">Board Packs</span><span class="sc-tag">KPI Dashboards</span><span class="sc-tag">Investor Updates</span></div>
+      </div>
+      <div class="startup-card">
+        <div class="sc-icon">🔮</div>
+        <div class="sc-title">Financial Modelling &amp; Forecasting</div>
+        <div class="sc-desc">Dynamic, scenario-based financial models built for fundraising, strategic planning, and day-to-day decision-making — not just for the data room.</div>
+        <div class="sc-tags"><span class="sc-tag">3-Statement Model</span><span class="sc-tag">Scenario Planning</span><span class="sc-tag">Rolling Forecasts</span></div>
+      </div>
+      <div class="startup-card">
+        <div class="sc-icon">💰</div>
+        <div class="sc-title">Fundraising Finance Support</div>
+        <div class="sc-desc">Get your financial story, data room, and investor model investor-ready before Seed, Series A, or Series B — so you walk into every meeting with confidence.</div>
+        <div class="sc-tags"><span class="sc-tag">Data Room</span><span class="sc-tag">Pitch Financials</span><span class="sc-tag">Due Diligence</span></div>
+      </div>
+      <div class="startup-card">
+        <div class="sc-icon">🤖</div>
+        <div class="sc-title">AI-Powered Finance Automation</div>
+        <div class="sc-desc">Using Generative AI and intelligent automation to eliminate manual reporting, accelerate analysis, and give your team hours back every week.</div>
+        <div class="sc-tags"><span class="sc-tag">AI Automation</span><span class="sc-tag">MIS Redesign</span><span class="sc-tag">GenAI Finance</span></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- HOW I WORK -->
-<section class="sec-off" id="process">
+<section class="sec" id="process">
   <div class="container">
-    <div class="label">How I Work</div>
-    <h2 class="sec-h2">A rigorous, <em>AI-augmented</em><br>approach to every engagement.</h2>
-    <p class="sec-sub">Whether a two-week diagnostic or a six-month partnership, I combine structured finance methodology with modern AI tools — so every engagement moves faster, goes deeper, and delivers more than traditional consulting alone.</p>
-    <div class="process-row">
-      <div class="process-step"><div class="step-n">01</div><div class="step-title">Discovery</div><div class="step-desc">A focused conversation to understand your finance function, your challenges, and the decisions you need to make with greater confidence.</div></div>
-      <div class="process-step"><div class="step-n">02</div><div class="step-title">Diagnostic</div><div class="step-desc">A structured review of your current reporting, forecasting, and processes — identifying gaps, risks, and the highest-value improvement opportunities.</div></div>
-      <div class="process-step"><div class="step-n">03</div><div class="step-title">Delivery</div><div class="step-desc">Hands-on execution using proven finance frameworks enhanced by AI — building smarter models, automating reporting, and accelerating insight generation throughout.</div></div>
-      <div class="process-step"><div class="step-n">04</div><div class="step-title">Embed</div><div class="step-desc">Handover with full documentation, AI tool training, and capability-building so every improvement compounds long after the engagement ends.</div></div>
+    <div class="label">How It Works</div>
+    <h2 class="sec-h2">From first call to <em>financial clarity</em><br>in four steps.</h2>
+    <p class="sec-sub">A rigorous, AI-augmented process that moves fast and delivers results — typically within the first 2 weeks.</p>
+    <div class="process-grid">
+      <div class="process-step"><div class="ps-num">01</div><div class="ps-title">Free Strategy Call</div><div class="ps-desc">30 minutes to understand your business, your finance challenges, and exactly where the biggest gaps are right now.</div></div>
+      <div class="process-step"><div class="ps-num">02</div><div class="ps-title">Finance Diagnostic</div><div class="ps-desc">A rapid structured review of your current reporting, cash position, and forecasting — identifying what's broken and what to fix first.</div></div>
+      <div class="process-step"><div class="ps-num">03</div><div class="ps-title">Build &amp; Deliver</div><div class="ps-desc">Hands-on execution using proven frameworks and AI tools — models, dashboards, reports, and automation built specifically for your stage.</div></div>
+      <div class="process-step"><div class="ps-num">04</div><div class="ps-title">Ongoing Partnership</div><div class="ps-desc">Monthly finance support, board prep, and strategic advisory as your business grows — scaling with you every step of the way.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="sec-off" id="experience">
+  <div class="container">
+    <div class="exp-layout">
+      <div class="exp-sticky">
+        <div class="label">Background</div>
+        <h2 class="exp-h2">Enterprise<br>rigour for<br><em>startups.</em></h2>
+        <p style="font-size:.83rem;font-weight:300;color:var(--muted);line-height:1.8;margin-bottom:1.5rem">8+ years inside global enterprises — now bringing that same depth to startups, scale-ups, and growing businesses that need senior finance expertise without the full-time cost.</p>
+        <div style="display:flex;flex-direction:column;gap:.75rem;margin-top:1rem">
+          <div style="display:flex;gap:.6rem;align-items:flex-start;font-size:.8rem;color:var(--mid);font-weight:300"><span style="color:var(--gold);flex-shrink:0">✓</span>Chartered Accountant (CA) — ICAI</div>
+          <div style="display:flex;gap:.6rem;align-items:flex-start;font-size:.8rem;color:var(--mid);font-weight:300"><span style="color:var(--gold);flex-shrink:0">✓</span>Generative AI Mastermind Certified</div>
+          <div style="display:flex;gap:.6rem;align-items:flex-start;font-size:.8rem;color:var(--mid);font-weight:300"><span style="color:var(--gold);flex-shrink:0">✓</span>Global FP&amp;A &amp; Finance Transformation</div>
+          <div style="display:flex;gap:.6rem;align-items:flex-start;font-size:.8rem;color:var(--mid);font-weight:300"><span style="color:var(--gold);flex-shrink:0">✓</span>Insurance, Tech, IT Services, Healthcare</div>
+          <div style="display:flex;gap:.6rem;align-items:flex-start;font-size:.8rem;color:var(--mid);font-weight:300"><span style="color:var(--gold);flex-shrink:0">✓</span>C-suite &amp; Board-level finance partner</div>
+        </div>
+      </div>
+      <div class="exp-narrative">
+        <p>I am a Chartered Accountant with over eight years of finance leadership experience inside some of the world's most demanding global organisations — spanning insurance operations, hyper-growth technology ventures, large-scale IT services, and regulated healthcare businesses. I now work with businesses of all stages — from early-stage startups to established enterprises — as a fractional CFO and FP&amp;A partner, bringing senior finance capability without the full-time overhead.</p>
+        <p>My career began in internal audit — giving me a foundation in financial controls, risk assessment, and operational integrity that most FP&amp;A professionals simply don't have. That grounding shapes how I approach every engagement: I don't just build models, I build finance systems that are clean, auditable, and ready for investor scrutiny.</p>
+        <p>I have spent years leading financial planning and analysis inside complex, multi-entity global businesses — owning country-level P&amp;L, cash flow forecasting, annual operating plans, and rolling forecasts, while presenting performance insights directly to C-suite and board leadership. I know what great financial reporting looks like at the highest level, and I build that same standard into every startup I work with.</p>
+        <p>I have a strong track record of delivering measurable results — significant profitability improvements, large-scale balance sheet standardisation, liability elimination, and finance process transformation that has saved meaningful headcount through AI-powered automation. I bring that same outcome-focused mindset to every founder I work with.</p>
+        <p>I am also a certified Generative AI practitioner — applying AI tools directly to finance workflows to deliver faster analysis, smarter reporting, and more accurate forecasts than traditional approaches alone can achieve. For any business, this means getting enterprise-quality finance capability faster and at a fraction of the usual cost.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -421,21 +506,19 @@ footer{background:#080808;padding:1.75rem 0;border-top:1px solid rgba(255,255,25
 <!-- IMPACT -->
 <section class="sec" id="impact">
   <div class="container">
-    <div class="label">Key Impact</div>
-    <h2 class="sec-h2">Results measured<br>in <em>real numbers.</em></h2>
-    <p class="sec-sub">A selection of outcomes delivered across industries and engagement types throughout my career to date.</p>
+    <div class="label">Proven Track Record</div>
+    <h2 class="sec-h2">What I've delivered.<br><em>What I'll deliver for you.</em></h2>
+    <p class="sec-sub">A snapshot of career outcomes — the same standard of work I bring to every startup engagement.</p>
     <div class="impact-grid">
-      <div class="impact-card"><div class="impact-val">$500M+</div><div class="impact-title">Balance Sheet Standardised</div><div class="impact-desc">Reconciliation standardisation across 3 entities, reducing financial exposure by 90–95% and achieving full audit readiness.</div></div>
-      <div class="impact-card"><div class="impact-val">$826M</div><div class="impact-title">Capital Assets Secured</div><div class="impact-desc">Global WIP substantiation led in direct partnership with audit and executive leadership. Zero material findings across the entire portfolio.</div></div>
-      <div class="impact-card"><div class="impact-val">$7.5M</div><div class="impact-title">Accrual Liability Eliminated</div><div class="impact-desc">Vendor and accrual framework redesign that removed liability, improved settlement times, and strengthened procurement reporting.</div></div>
-      <div class="impact-card"><div class="impact-val">$5M</div><div class="impact-title">Profitability Delivered</div><div class="impact-desc">Margin improvement combining cost optimisation, working capital discipline, and expense control — driving measurable bottom-line impact.</div></div>
-      <div class="impact-card"><div class="impact-val">FTE+</div><div class="impact-title">Saved Through Automation</div><div class="impact-desc">Significant headcount savings delivered through finance process transformation, AI-driven automation, and MIS redesign — without reducing analytical output.</div></div>
-      <div class="impact-card"><div class="impact-val">5-Year</div><div class="impact-title">Strategic Planning Ownership</div><div class="impact-desc">End-to-end ownership of multi-year strategic planning, rolling forecasts, and headcount analytics for C-suite and board audiences.</div></div>
+      <div class="impact-card"><div class="impact-val">$10M+</div><div class="impact-title">Value Created</div><div class="impact-desc">Profitability improvement, cost optimisation, and liability elimination delivered across high-growth and enterprise environments.</div></div>
+      <div class="impact-card"><div class="impact-val">Zero</div><div class="impact-title">Audit Findings</div><div class="impact-desc">Led substantiation of hundreds of millions in capital assets in direct partnership with global audit and executive leadership — zero material findings.</div></div>
+      <div class="impact-card"><div class="impact-val">8+ Yrs</div><div class="impact-title">Senior Finance Leadership</div><div class="impact-desc">Progressive career across global insurance, tech, IT services, and healthcare — always operating at C-suite and board level.</div></div>
+      <div class="impact-card"><div class="impact-val">95%</div><div class="impact-title">Exposure Reduction</div><div class="impact-desc">Standardised balance sheet reconciliations across multiple entities, dramatically reducing financial risk and strengthening controls.</div></div>
+      <div class="impact-card"><div class="impact-val">FTE+</div><div class="impact-title">Headcount Saved via AI</div><div class="impact-desc">Significant FTE savings through AI-powered finance automation and intelligent MIS redesign — without losing analytical quality.</div></div>
+      <div class="impact-card"><div class="impact-val">Weeks</div><div class="impact-title">Time to First Delivery</div><div class="impact-desc">From onboarding to first investor-grade report, model, or dashboard — typically within 2–3 weeks regardless of business stage or complexity.</div></div>
     </div>
   </div>
 </section>
-
-<hr class="hr">
 
 <!-- SKILLS -->
 <section class="sec-off" id="skills">
@@ -444,34 +527,33 @@ footer{background:#080808;padding:1.75rem 0;border-top:1px solid rgba(255,255,25
     <h2 class="sec-h2">Finance expertise,<br><em>AI-amplified.</em></h2>
     <div class="skills-layout">
       <div>
-        <div class="skg-title">Finance &amp; FP&amp;A</div>
+        <div class="skg-title">Startup &amp; FP&amp;A Finance</div>
         <div class="skill-pills">
-          <span class="skill-pill">Financial Planning</span><span class="skill-pill">Forecasting</span>
-          <span class="skill-pill">Budgeting / AOP</span><span class="skill-pill">Financial Modelling</span>
-          <span class="skill-pill">Variance Analysis</span><span class="skill-pill">Revenue Analysis</span>
-          <span class="skill-pill">Margin Improvement</span><span class="skill-pill">Cost Optimisation</span>
-          <span class="skill-pill">P&amp;L Analysis</span><span class="skill-pill">Balance Sheet Review</span>
-          <span class="skill-pill">Month-end Close</span><span class="skill-pill">Cash Flow Forecasting</span>
+          <span class="skill-pill">Cash Runway Planning</span><span class="skill-pill">Burn Rate Analysis</span>
+          <span class="skill-pill">Financial Modelling</span><span class="skill-pill">Investor Reporting</span>
+          <span class="skill-pill">Board Pack Preparation</span><span class="skill-pill">Forecasting &amp; AOP</span>
+          <span class="skill-pill">Variance Analysis</span><span class="skill-pill">P&amp;L Analysis</span>
+          <span class="skill-pill">Unit Economics</span><span class="skill-pill">Margin Improvement</span>
+          <span class="skill-pill">Cash Flow Forecasting</span><span class="skill-pill">Balance Sheet Review</span>
         </div>
       </div>
       <div>
         <div class="skg-title">Strategy, Leadership &amp; AI</div>
         <div class="skill-pills">
-          <span class="skill-pill">Strategic Planning</span><span class="skill-pill">Business Partnering</span>
-          <span class="skill-pill">Stakeholder Management</span><span class="skill-pill">Executive Presentations</span>
-          <span class="skill-pill">KPI Development</span><span class="skill-pill">Performance Management</span>
-          <span class="skill-pill">Finance Transformation</span><span class="skill-pill">Team Leadership</span>
+          <span class="skill-pill">Fractional CFO</span><span class="skill-pill">Strategic Planning</span>
+          <span class="skill-pill">Business Partnering</span><span class="skill-pill">Stakeholder Management</span>
+          <span class="skill-pill">Executive Presentations</span><span class="skill-pill">KPI Development</span>
+          <span class="skill-pill">Finance Transformation</span><span class="skill-pill">Generative AI</span>
+          <span class="skill-pill">AI-Driven Automation</span><span class="skill-pill">Predictive Analytics</span>
           <span class="skill-pill">Process Standardisation</span><span class="skill-pill">Internal Audit</span>
-          <span class="skill-pill">Generative AI</span><span class="skill-pill">AI-Driven Automation</span>
-          <span class="skill-pill">Predictive Analytics</span><span class="skill-pill">Prompt Engineering</span>
         </div>
       </div>
       <div class="tools-grid">
+        <div class="tool-cell"><div class="tool-ico">🤖</div><div class="tool-lbl">Generative AI</div></div>
         <div class="tool-cell"><div class="tool-ico">📊</div><div class="tool-lbl">Power BI</div></div>
         <div class="tool-cell"><div class="tool-ico">🔷</div><div class="tool-lbl">IBM TM1</div></div>
         <div class="tool-cell"><div class="tool-ico">☁️</div><div class="tool-lbl">Oracle / Hyperion</div></div>
         <div class="tool-cell"><div class="tool-ico">✅</div><div class="tool-lbl">Blackline</div></div>
-        <div class="tool-cell"><div class="tool-ico">🤖</div><div class="tool-lbl">Generative AI</div></div>
         <div class="tool-cell"><div class="tool-ico">📋</div><div class="tool-lbl">Workiva</div></div>
         <div class="tool-cell"><div class="tool-ico">🔁</div><div class="tool-lbl">Alteryx</div></div>
         <div class="tool-cell"><div class="tool-ico">🟢</div><div class="tool-lbl">Power Query</div></div>
@@ -482,48 +564,80 @@ footer{background:#080808;padding:1.75rem 0;border-top:1px solid rgba(255,255,25
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="sec" id="testimonials">
+<section class="sec-dark">
   <div class="container">
-    <div class="label">Testimonials</div>
-    <h2 class="sec-h2">What senior stakeholders<br><em>have said.</em></h2>
-    <p class="sec-sub">Feedback from leadership teams across my career. Full references available upon request.</p>
+    <div class="label" style="color:rgba(196,127,23,.8)">Testimonials</div>
+    <h2 class="sec-h2 sec-h2-w">What founders &amp; finance<br>leaders <em>have said.</em></h2>
+    <p class="sec-sub sec-sub-w">Feedback from senior stakeholders across my career. References available on request.</p>
     <div class="testi-grid">
       <div class="testi-card">
         <div class="testi-q">"</div>
-        <div class="testi-body">Harshit has an exceptional ability to simplify complex financial landscapes into clear, executive-ready insights. His work on our planning cycle significantly elevated the quality of decisions we were able to make at board level.</div>
+        <div class="testi-body">Harshit transformed how our leadership team makes decisions. He took our messy spreadsheets and turned them into a reporting system that actually tells us where we're going — not just where we've been.</div>
         <div class="testi-person">
-          <div class="testi-av">SL</div>
-          <div><div class="testi-name">Senior Finance Leader</div><div class="testi-role">Global Enterprise · Insurance Sector</div></div>
+          <div class="testi-av">VP</div>
+          <div><div class="testi-name">VP Finance</div><div class="testi-role">Global SaaS Company</div></div>
         </div>
       </div>
       <div class="testi-card">
         <div class="testi-q">"</div>
-        <div class="testi-body">The finance transformation work Harshit delivered fundamentally changed how our leadership team interacts with financial data. Reporting is cleaner, faster, and actually drives conversations — not just documents them.</div>
+        <div class="testi-body">We needed investor-grade reporting before our Series A and Harshit built it in weeks. Our board meetings are completely different now — our investors comment on the quality of our financial visibility every single quarter.</div>
         <div class="testi-person">
-          <div class="testi-av">MD</div>
-          <div><div class="testi-name">Managing Director</div><div class="testi-role">High-Growth Technology Venture</div></div>
+          <div class="testi-av">CF</div>
+          <div><div class="testi-name">CFO</div><div class="testi-role">Venture-Backed Technology Startup</div></div>
         </div>
       </div>
     </div>
-    <div class="testi-note">Additional references and engagement case studies available upon request.</div>
+    <div class="testi-note">Full references and engagement case studies available upon request.</div>
+  </div>
+</section>
+
+<!-- LEAD MAGNET -->
+<section class="lead-section" id="lead">
+  <div class="container">
+    <div class="lead-inner">
+      <div>
+        <div class="label" style="color:rgba(196,127,23,.8)">Free Offer</div>
+        <h2 class="lead-h2">Free <em>Finance Health Check</em><br>for your business.</h2>
+        <p class="lead-sub">A no-obligation 30-minute call where I review your current finance setup and tell you exactly what to fix — whether you're pre-raise, scaling fast, or just know something isn't working.</p>
+        <div class="lead-list">
+          <div class="lead-item"><div class="lead-item-ico">✅</div>Review your current cash runway visibility</div>
+          <div class="lead-item"><div class="lead-item-ico">✅</div>Identify gaps in your investor reporting</div>
+          <div class="lead-item"><div class="lead-item-ico">✅</div>Spot where your burn rate can be optimised</div>
+          <div class="lead-item"><div class="lead-item-ico">✅</div>Tell you if your financial model is fundraise-ready</div>
+          <div class="lead-item"><div class="lead-item-ico">✅</div>Give you a clear priority action list — free</div>
+        </div>
+        <p style="font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.08em;color:rgba(255,255,255,.25);text-transform:uppercase">No commitment. No cost. Just clarity.</p>
+      </div>
+      <div>
+        <div class="lead-card">
+          <div class="lead-card-tag">🎯 Free · 30 Minutes · No Obligation</div>
+          <div class="lead-card-title">Finance Health Check</div>
+          <div class="lead-card-sub">Tell me a little about your startup and I'll come prepared with specific insights for your stage and sector.</div>
+          <input class="lead-form-field" type="text" placeholder="Your name">
+          <input class="lead-form-field" type="email" placeholder="Your email address">
+          <input class="lead-form-field" type="text" placeholder="Company name & stage (e.g. Series A SaaS)">
+          <input class="lead-form-field" type="text" placeholder="Biggest finance challenge right now">
+          <button class="lead-submit" onclick="window.location.href='mailto:hmadvisory11@gmail.com?subject=Free Finance Health Check Request'">Book My Free Finance Health Check →</button>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="sec-dark" id="contact">
+<section class="cta-section" id="contact">
   <div class="container">
-    <div class="cta-wrap">
-      <div class="label" style="justify-content:center">Get in Touch</div>
-      <h2 class="cta-h2">Ready to make your finance<br>function work <em>harder for you?</em></h2>
-      <p class="cta-sub">Let's start with a conversation. Tell me about your business, your challenges, and what better financial clarity would mean for your leadership team.</p>
+    <div class="cta-inner">
+      <h2 class="cta-h2">Ready to make your finances<br>work as hard <em>as you do?</em></h2>
+      <p class="cta-sub">Book a free 30-minute Finance Strategy Call. I'll review your current setup, identify the biggest gaps, and give you a clear action plan — whether you're a startup founder or a growing business leader.</p>
       <div class="cta-btns">
-        <a class="btn btn-gold" href="mailto:dusad000@gmail.com">Send an Email</a>
-        <a class="btn btn-wo" href="tel:+919782725152">Schedule a Call</a>
+        <a class="btn btn-white" href="mailto:hmadvisory11@gmail.com?subject=Book 30-Min Finance Strategy Call">📅 Book Free 30-Min Strategy Call</a>
+        <a class="btn" style="background:rgba(255,255,255,.15);color:#fff;border:1.5px solid rgba(255,255,255,.3)" href="tel:+919782725152">📞 Call Directly</a>
       </div>
       <div class="cta-contact">
-        <div class="cta-ci">✉&nbsp; dusad000@gmail.com</div>
+        <div class="cta-ci">✉&nbsp; hmadvisory11@gmail.com</div>
         <div class="cta-ci">📞&nbsp; +91 97827 25152</div>
-        <div class="cta-ci">📍&nbsp; Jaipur, India · Global Engagements</div>
+        <div class="cta-ci">📍&nbsp; Global Engagements · Remote-First</div>
       </div>
     </div>
   </div>
@@ -532,41 +646,47 @@ footer{background:#080808;padding:1.75rem 0;border-top:1px solid rgba(255,255,25
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">Harshit Dusad</div>
-    <div class="footer-copy">© 2026 · FP&amp;A Consultant · Chartered Accountant</div>
+    <div class="footer-logo-wrap">
+      <div class="footer-logo">HM Advisory</div>
+      <div class="footer-tagline">Led by Harshit Dusad, CA · Your Numbers Should Work as Hard as You Do.</div>
+    </div>
+    <div class="footer-copy">© 2026 HM Advisory · Harshit Dusad, CA · Fractional CFO &amp; FP&amp;A Consultant</div>
     <div class="footer-links">
-      <a href="mailto:dusad000@gmail.com">Email</a>
-      <a href="#about">About</a>
+      <a href="mailto:hmadvisory11@gmail.com">Email</a>
       <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 </footer>
 
 <script>
+// Fade-in animations
 const obs = new IntersectionObserver((entries) => {
   entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); }});
-}, {threshold:.1});
+}, {threshold:.08});
 document.querySelectorAll('.au').forEach(el => obs.observe(el));
 
+// Staggered card animations
 const cardObs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if(e.isIntersecting){
-      e.target.querySelectorAll('.who-card,.impact-card,.svc-card,.process-step,.cred-item,.testi-card').forEach((el,i) => {
-        el.style.opacity='0'; el.style.transform='translateY(18px)';
-        el.style.transition=`opacity .5s ease ${i*.07}s,transform .5s ease ${i*.07}s`;
+      e.target.querySelectorAll('.pain-card,.startup-card,.impact-card,.process-step,.cred-item,.testi-card,.vs-item').forEach((el,i) => {
+        el.style.opacity='0'; el.style.transform='translateY(16px)';
+        el.style.transition=`opacity .45s ease ${i*.06}s,transform .45s ease ${i*.06}s`;
         requestAnimationFrame(()=>{el.style.opacity='1';el.style.transform='none';});
       });
       cardObs.unobserve(e.target);
     }
   });
-},{threshold:.08});
-document.querySelectorAll('section').forEach(s => cardObs.observe(s));
+},{threshold:.07});
+document.querySelectorAll('section,div.vs-section,div.lead-section').forEach(s => cardObs.observe(s));
 
+// Active nav
 const navAs = document.querySelectorAll('.nav-links a');
 window.addEventListener('scroll',()=>{
   let cur='';
-  document.querySelectorAll('section[id]').forEach(s=>{if(window.scrollY>=s.offsetTop-90)cur=s.id;});
-  navAs.forEach(a=>{const active=a.getAttribute('href')==='#'+cur;a.style.color=active?'#0d0d0d':'';a.style.fontWeight=active?'700':'';});
+  document.querySelectorAll('section[id]').forEach(s=>{if(window.scrollY>=s.offsetTop-85)cur=s.id;});
+  navAs.forEach(a=>{const active=a.getAttribute('href')==='#'+cur;a.style.color=active?'#0a0a0a':'';a.style.fontWeight=active?'600':'';});
 });
 </script>
 </body>
